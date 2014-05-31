@@ -1,0 +1,23 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: anon-shared-build-log-build-version
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 8), faketime, git
+Homepage: https://github.com/Whonix/anon-shared-build-log-build-version
+Vcs-Browser: https://github.com/Whonix/anon-shared-build-log-build-version
+Vcs-Git: https://github.com/Whonix/anon-shared-build-log-build-version.git
+Standards-Version: 3.9.4
+
+Package: anon-shared-build-log-build-version
+Architecture: all
+Depends: ${misc:Depends}
+Description: Logs build version in Anonymity Linux Distributions during build
+ Logs environment variable anon_dist_build_version to
+ /var/lib/anon-dist/build_version using a chroot-post.d script.
+ .
+ This can be useful for other packages to identify the build version and build
+ time stamp of the system they are running in.
