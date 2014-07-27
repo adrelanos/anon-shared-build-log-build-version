@@ -51,6 +51,8 @@ fi
 ## Support re-running the script.
 rm --force "/var/lib/anon-dist/build_version"
 
+mkdir --parents /var/lib/anon-dist
+
 ## Debugging.
 touch "/var/lib/anon-dist/build_version"
 
